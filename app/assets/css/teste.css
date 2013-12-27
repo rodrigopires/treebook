@@ -1,0 +1,36 @@
+/* variaveis */
+div {
+  color: orange; }
+
+section {
+  background-color: orange;
+  /* nested styles */ }
+  section .bt {
+    background-color: blue;
+    color: black;
+    border: 1px solid red; }
+
+/* mixins */
+.botao {
+  display: block;
+  width: 300px;
+  height: 200px;
+  background-color: gray; }
+
+.botao-vermelho {
+  display: block;
+  width: 300px;
+  height: 200px;
+  background-color: red; }
+
+/* mixins com content */
+.teste {
+  color: blue;
+  width: 500px; }
+
+/* extends */
+.modulo-a, .modulo-b {
+  border: 1px solid black; }
+
+.modulo-b {
+  background-color: #EEE; }

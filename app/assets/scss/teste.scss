@@ -1,0 +1,43 @@
+@import "cores";
+@import "mixins";
+
+/* variaveis */
+div{
+	color: $laranja;
+}
+
+section{
+	
+	background-color: $laranja;
+
+	/* nested styles */
+	.bt{
+		background-color: $azul;
+		color: black;
+		border: 1px solid red;
+	}
+}
+
+/* mixins */
+.botao{
+	@include botao;	
+}
+.botao-vermelho{
+	@include botao(red);
+}
+
+/* mixins com content */
+.teste{
+	@include teste(blue){
+		width: 500px;
+	}
+}
+
+/* extends */
+.modulo-a{
+	border:1px solid black;
+}
+.modulo-b{
+	@extend .modulo-a;
+	background-color: #EEE;
+}

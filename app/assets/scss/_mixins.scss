@@ -1,0 +1,11 @@
+@mixin botao($bgcolor:gray) {
+	display: block;
+	width: 300px;
+	height: 200px;
+	background-color: $bgcolor;
+}
+
+@mixin teste($color:yellow){
+	color: $color;
+	@content;
+}
